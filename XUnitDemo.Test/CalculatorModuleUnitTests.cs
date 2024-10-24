@@ -1,6 +1,6 @@
 namespace XUnitDemo.Test
 {
-    public class Module1UnitTests
+    public class CalculatorModuleUnitTests
     {
         // fact attribute makes the method open for unit testing
         [Fact]
@@ -11,7 +11,7 @@ namespace XUnitDemo.Test
             var num2 = 3.1;
             var expectedValue = 6;
             // Act
-            var sum = Module1.Add(num1, num2);
+            var sum = CalculatorModule.Add(num1, num2);
             // Assert
             Assert.Equal(expectedValue, sum, 1);
         }
@@ -23,7 +23,7 @@ namespace XUnitDemo.Test
             var num2 = 3.1;
             var expectedValue = -0.2;
             // Act
-            var sub = Module1.Subtract(num1, num2);
+            var sub = CalculatorModule.Subtract(num1, num2);
             // Assert
             Assert.Equal(expectedValue, sub, 1);
         }
@@ -35,7 +35,7 @@ namespace XUnitDemo.Test
             var num2 = 3.1;
             var expectedValue = 8.99;
             // Act
-            var mult = Module1.Multiply(num1, num2);
+            var mult = CalculatorModule.Multiply(num1, num2);
             // Assert
             Assert.Equal(expectedValue, mult, 2);
         }
@@ -50,7 +50,7 @@ namespace XUnitDemo.Test
             var num2 = 3.1;
             var expectedValue = 0.94; // Rounded value
                                       // Act
-            var div = Module1.Divide(num1, num2);
+            var div = CalculatorModule.Divide(num1, num2);
             // Assert
             Assert.Equal(expectedValue, div, 2);
         }
@@ -64,7 +64,7 @@ namespace XUnitDemo.Test
         public void Task_Add_TwoNumbers(double num1, double num2, double expectedValue)
         {
             // Act
-            var sum = Module1.Add(num1, num2);
+            var sum = CalculatorModule.Add(num1, num2);
             // Assert
             Assert.Equal(expectedValue, sum, 1);
         }
@@ -77,7 +77,7 @@ namespace XUnitDemo.Test
         public void Task_Subtract_TwoNumbers(double num1, double num2, double expectedValue)
         {
             // Act
-            var sub = Module1.Subtract(num1, num2);
+            var sub = CalculatorModule.Subtract(num1, num2);
             // Assert
             Assert.Equal(expectedValue, sub, 1);
         }
@@ -90,7 +90,7 @@ namespace XUnitDemo.Test
         public void Task_Multiply_TwoNumbers(double num1, double num2, double expectedValue)
         {
             // Act
-            var mult = Module1.Multiply(num1, num2);
+            var mult = CalculatorModule.Multiply(num1, num2);
             // Assert
             Assert.Equal(expectedValue, mult, 2);
         }
@@ -103,7 +103,7 @@ namespace XUnitDemo.Test
         public void Task_Divide_TwoNumbers(double num1, double num2, double expectedValue)
         {
             // Act
-            var div = Module1.Divide(num1, num2);
+            var div = CalculatorModule.Divide(num1, num2);
             // Assert
             Assert.Equal(expectedValue, div, 2);
         }

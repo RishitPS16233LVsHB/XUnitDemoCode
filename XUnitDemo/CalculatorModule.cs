@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XUnitDemo
 {
-    public class Module1
+    public class CalculatorModule
     {
         public static double Add(double number1, double number2)
         {
